@@ -11,9 +11,16 @@
 }
 .logo {
   width: 155px;
+  margin-top: 10px;
 }
 .menu {
   font-size: 16px;
+  color: #4a4a4a;
+  margin-top: 10px;
+  margin-bottom: 13px;
+}
+.blog {
+  margin-right: 20px;
 }
 .main {
   background-color: #3cdbc0;
@@ -26,4 +33,32 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+@media all and (min-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .menu {
+    font-size: 16px;
+  }
+  .logo {
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .blog {
+    margin-right: 20px;
+  }
+  .contact {
+    margin-right: 30px;
+  }
+  .main {
+    font-size: 40px;
+  }
+  .tittle {
+    max-width: 500px;
+  }
 }
