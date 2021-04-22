@@ -2,12 +2,13 @@
   font-family: "Rubik", sans-serif;
 }
 .header {
+  background-color: #ffffff;
   width: 100vw;
-  height: 15vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  position: fixed;
+  top: 0%;
 }
 .logo {
   width: 155px;
@@ -18,39 +19,43 @@
   color: #4a4a4a;
   margin-top: 10px;
   margin-bottom: 13px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-decoration: none;
+  list-style: none;
 }
 .blog {
+  text-decoration: none;
   margin-right: 20px;
+  padding: 10px;
+}
+.contact {
+  padding: 10px;
 }
 .main {
+  height: 100vh;
   background-color: #3cdbc0;
   color: #ffffff;
   font-size: 30px;
-  height: 85vh;
-  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  text-transform: capitalize;
 }
 
 @media all and (min-width: 768px) {
   .header {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
-  }
-  .menu {
-    font-size: 16px;
   }
   .logo {
     margin-left: 30px;
     margin-top: 20px;
     margin-bottom: 20px;
-  }
-  .blog {
-    margin-right: 20px;
   }
   .contact {
     margin-right: 30px;
@@ -59,6 +64,7 @@
     font-size: 40px;
   }
   .tittle {
-    max-width: 500px;
+    max-width: 300px;
+    font-size: 40px;
   }
 }
